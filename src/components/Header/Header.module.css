@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    font-family: 'Open-sans', sans-serif;
+    list-style: none;
+    gap: 20px;
+}
+.container li a {
+    color: #000;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.container li a:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.container .exit {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.container li .active{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+@media (max-width: 760px) {
+    .container {
+        gap: 10px;
+    }
+    .container li a {
+        padding: 5px;
+        font-size: .9em;
+    }
+}
+@media (max-width: 400px) {
+    .container li a {
+        font-size: .8em;
+    }
+}

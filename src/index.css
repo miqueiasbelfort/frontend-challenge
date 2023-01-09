@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --main-color: #0291d3;
+    --main-dark-color: #006fa2;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

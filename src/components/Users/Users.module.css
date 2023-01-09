@@ -1,0 +1,24 @@
+.user {
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 8px 0px #7a7a7a;
+    font-family: 'Open-sans', sans-serif;
+    font-size: .9em;
+}
+.user img{
+    border-radius: 7px;
+}
+.user h2 {
+    font-size: 1em;
+    font-weight: bold;
+}
+.user p {
+    font-size: .8em;
+    margin-top: 5px;
+}

@@ -1,0 +1,105 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content {
+    margin: 20px 0;
+    max-width: 900px;
+}
+.content .createContainer {
+    width: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.content .createContainer button {
+    font-size: 2em;
+    background-color: transparent;
+    color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.content .createContainer button:hover {
+    color: var(--main-dark-color);
+}
+
+.container .client {
+    width: 500px;
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.content .client .clientInfo {
+    color: #fff;
+    font-family: 'Open-sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: 1.2em;
+}
+.client .clientInfo a {
+    font-size: 1.3em;
+    color: #fff;
+    text-decoration: none;
+}
+.content .client .clientInfo .email {
+    font-style: italic;
+}
+
+.content .client .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.client .actions button {
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.client .actions .trash:hover {
+    color: #ff0000;
+}
+
+.content .modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 760px) {
+    .container .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content .createContainer{
+        width: 90%;
+    }
+    .content .client {
+        width: 90%;
+    }
+    .clients{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
